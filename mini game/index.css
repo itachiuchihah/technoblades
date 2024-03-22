@@ -1,0 +1,242 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins',sans-serif;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background:rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+#header{
+  width: 100%;
+  height: 100vh;
+  background-image: url(WhatsApp\ Image\ 2024-03-21\ at\ 19.13.36.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container{
+ padding: 5px 10%;
+ margin-bottom: 30px;
+ background-color: black;
+ 
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 0px;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 0px;
+ 
+}
+
+.logo{
+  width: 75px;
+  margin-top: 0px;
+  margin-bottom: none;
+  padding-left: 10px;
+  margin-right: 70px;
+  
+}
+nav ul li{
+  display:inline-block;
+  list-style: none;
+  margin: 10px 20px;
+  
+  
+
+}
+nav ul li a{
+  color: rgb(252, 252, 252);
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+
+
+}
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: rgb(255, 255, 255);
+  position:absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after{
+  width: 100%;
+}
+.header-text {
+  margin-top:  30%;
+  font-size: 30px;
+  padding-left: 150px;
+}
+.header-text h6{
+  font-size: 20px;
+  margin-top: 20px;
+  color: rgb(255, 255, 255);
+}
+
+#about{
+  padding: 80px 0;
+  color: rgb(255, 255, 255);
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-col-1{
+  flex-basis: 35%;
+}
+.about-col-1 img{
+  width: 75%;
+  border-radius: 15px;
+}
+.about-col-2{
+  flex-basis: 60%;
+}
+.sub-title{
+  font-size: 60px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  color: rgb(255, 255, 255);
+
+}
+#portfolio{
+  padding: 40px 0;
+}
+.work-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.work{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.work img{
+  width: 80%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+.layer{
+  width: 85%;
+  height: 0;
+  background: linear-gradient(rgba(0,0,0,0.6),rgb(220, 226, 225));
+  border-radius: 10px;
+  position:absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+  color: #000000;
+}
+.layer h3{
+ font-weight: 500px; 
+ margin-bottom: 20px;
+ color: #ffffff;
+}
+
+.work:hover img{
+  transform: scale(1.1);
+}
+.work:hover .layer{
+  height: 100%;
+}
+
+  
+.btn{
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid rgb(253, 253, 253);
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: black;
+  transition: background 0.5s;
+}
+.btn:hover{
+  background: rgb(248, 247, 246);
+  cursor: pointer;
+
+}
+/* Style for team section */
+#about {
+  background-color: #000000; /* Light background color */
+  padding: 30px 10%; /* Adjust padding horizontally to match other sections */
+  padding-bottom: 80px; /* Add bottom padding to create space */
+  text-align: center; /* Center align the content */
+  margin-top: 30px; /* Adjust top margin to match other sections */
+}
+
+/* Style for team member items */
+.item {
+  margin-bottom: 30px; /* Adjusted spacing between team members */
+  text-align: center; /* Center align the content */
+}
+
+/* Style for team member images */
+.item-img img {
+  width: 120%; /* Adjusted width for team member images */
+  max-width: 140px; /* Set maximum width for consistency */
+  border-radius: 50%; /* Round image corners for circular shape */
+}
+
+
+/* Style for team member names */
+.item-name {
+  margin-top: 20px; /* Spacing between name and image */
+  color: #ffffff; /* Name color */
+}
+
+/* Style for team member roles */
+.mbr-role {
+  color: #0882ec; /* Subdued color for roles */
+}
+
+/* Style for social icons */
+.soc-iconfont {
+  font-size: 24px; /* Size of social icons */
+  margin: 0 5px; /* Spacing between social icons */
+  color: #387ec5; /* Color of social icons */
+}
+
+.mbr-section-title {
+  padding-bottom: 50px;
+  padding-top: 20px;
+  font-size: 1.5cm;
+  padding-right: 900px;
+}
+/* Style for copyright section */
+.copyright {
+  background-color: #000; /* Black background color */
+  color: #fff; /* White text color */
+  padding: 20px; /* Padding around the content */
+  text-align: center; /* Center align the content */
+  border-top: 2px solid #fff; /* White border on the top */
+  border-bottom: 2px solid #fff; /* White border on the bottom */
+  margin-top: 50px; /* Adjust margin as needed */
+}
